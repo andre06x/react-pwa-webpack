@@ -1,17 +1,9 @@
-# Getting Started with Create React App
+# PWA Tutorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de tutorial para desenvolvimento de PWA, utilizando REACT com webpack,service worker, workbox e modo offline.
 
-## Install
+## Instalação
 
-Install the dependencies with `npm ci`.
+Certifique-se de ter o Node.js e o npm instalados em seu ambiente de desenvolvimento. Clone o repositório e instale as dependências usando o seguinte comando:
 
-## Available Scripts
-
-In the project directory, you can run `npm start`. It will build and server the application locally.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Script dev não suporta service worker, é necessário utilizar um build para ter acesso aos recursos.
