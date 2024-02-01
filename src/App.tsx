@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Logo webpack manifest</p>
+        <img src="/logo.png" className="App-logo" alt="logo" />
+        <p>Logo webpack manifest | teste2</p>
         <a
           className="App-link"
           href="https://reactjs.org"
