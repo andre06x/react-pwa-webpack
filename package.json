@@ -30,7 +30,9 @@
   "scripts": {
     "start": "webpack --config webpack.config.js && serve -s dist",
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "build-vercel": "webpack --config webpack.config.js --mode production"
+
 
   },
   "eslintConfig": {
