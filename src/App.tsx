@@ -7,9 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit1312321321<code>src/App.tsx</code> and save to 3123123reload.
-        </p>
+        <p>Logo webpack manifest</p>
         <a
           className="App-link"
           href="https://reactjs.org"
