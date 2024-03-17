@@ -5,10 +5,7 @@
     <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -31,4 +28,22 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js").then((registration) => {
+        console.log("SW REGISTRADO");
+
+        Notification.requestPermission().then((permission) => {
+          if (permission === "granted") {
+            console.log("Permissão para notificações concedida");
+            // Inscreva-se para Push Notifications
+            console.log("registration => ", registration);
+          } else {
+            console.log("Permissão para notificações negada");
+          }
+        });
+      });
+    }
+  </script>
 </html>
